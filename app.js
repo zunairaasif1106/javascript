@@ -1,68 +1,63 @@
-//chapter 14
-//arrays
-//question 1-2
-var students =[]
-console.log(students);
+//chapter 17
+//question 1
+var multiArray = []
 
+//question 2
+var matrix = [
+    [0, 1, 2, 3],
+    [1, 0, 1, 2],
+    [2, 1, 0, 1]
+];
 
 //question 3
-var stringarray = ["ayesha","zunaira","sana","hira"]
-console.log
+for (var i = 1; i <= 10; i++) {
+    console.log(i);
+}
 
 //question 4
-var numberarray = [6, 22, 26, 10, 7];
-console.log(numberarray);
+var number = +prompt("Enter a number for multiplication:");
+var length = +prompt("Enter length");
+for (var i = 1; i <= length; i++) {
+    console.log(number + " x " + i + " = " + (number * i));
+}
 
 //question 5
-var booleanarray = [true, false];
-console.log(booleanarray);
+var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+for (var a = 0; a < fruits.length; a++) {
+    console.log("Element at index " + a + " is " + fruits[a]);
+}
 
 //question 6
-var mixedarray = ["zunaira", 11, 12, "huzaifa", false];
-console.log(mixedarray);
+for (var i = 1; i <= 15; i++) {
+    console.log(i);
+    document.write(i );
+}
+
+//b. reverse counting
+for (var i = 10; i >= 1; i--) {
+    console.log(i);
+    document.write(i );
+}
+
+//c. even
+for (var i = 0; i <= 20; i += 2) {
+    console.log(i);
+    document.write(i );
+}
+
+//d. odd
+for (var i = 1; i < 20; i += 2) {
+    console.log(i);
+    document.write(i );
+}
+
+//e. series
+for (var i = 2; i <= 20; i += 2) {
+    console.log(i + "k");
+    document.write(i + "k ");
+}
 
 //question 7
-var qualification = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
-document.write("qualification" + "<br>" + qualification [0]+"<br>")
-document.write(qualification[1]+"<br>")
-document.write(qualification[2]+"<br>")
-document.write(qualification[3]+"<br>")
-document.write(qualification[4]+"<br>")
-document.write(qualification[5]+"<br>")
-document.write(qualification[6]+"<br>")
-document.write(qualification[7]+"<br>")
-
-//question 8
-var studentname = ["michael", "john", "tony"];
-var studentmarks = [320, 230, 480];
-document.write("score of " + studentname[0] + " is " + studentmarks[0] + " Percentage: " + (studentmarks[0]/500*100) + "%" + "<br>");
-document.write("score of " + studentname[1] + " is " + studentmarks[1] + " Percentage: " + (studentmarks[1]/500*100) + "%" + "<br>");
-document.write("score of " + studentname[2] + " is " + studentmarks[2] + " Percentage: " + (studentmarks[2]/500*100) + "%" + "<br>");
-
-//question 9
-var colornames = ["pink", "white", "black"];
-document.write(colornames + "<br>");
-
-//a
-var colorbegin = prompt("which color you want to add to the beginning?");
-colornames.unshift(color);
-document.write(colornames + "<br>");
-
-//b
-var colorend = prompt("which color you want to add to the end?");
-colornames.push(colorend);
-document.write(colornames + "<br>");
-
-//c
-colornames.unshift("purple", "yellow");
-document.write(colornames + "<br>");
-
-//d
-colornames.shift();
-document.write(colornames + "<br>");
-
-//e
-colornames.pop();
-document.write(colornames + "<br>");
-
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+var search = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
 
