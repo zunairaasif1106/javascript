@@ -1,63 +1,51 @@
-//chapter 17
-//question 1
-var multiArray = []
+//chapter 21 to 25
+//q1
+var firstName = prompt("Enter your first name:");
+var lastName = prompt("Enter your last name:");
+var fullName = (firstName + lastName);
+alert("Have a nice day!" + fullName );
 
-//question 2
-var matrix = [
-    [0, 1, 2, 3],
-    [1, 0, 1, 2],
-    [2, 1, 0, 1]
-];
+//q2
+var favph = prompt("Enter your favorite mobile model:");
+document.write("My favorite phone is: " + favph + "<br>");
 
-//question 3
-for (var i = 1; i <= 10; i++) {
-    console.log(i);
-}
+//q4
+var string = "Hello World";
+document.write("String: " + string + "<br>");
+document.write("Last index of 'l': " + string.lastIndexOf('l') + "<br>");
 
-//question 4
-var number = +prompt("Enter a number for multiplication:");
-var length = +prompt("Enter length");
-for (var i = 1; i <= length; i++) {
-    console.log(number + " x " + i + " = " + (number * i));
-}
+//q5
+var country = "Pakistani";
+document.write("String: " + country + "<br>");
+document.write("Character at index 3: " + country.charAt(3) + "<br>");
 
-//question 5
-var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
-for (var a = 0; a < fruits.length; a++) {
-    console.log("Element at index " + a + " is " + fruits[a]);
-}
+//q7
+var city = "Hyderabad";
+var City2 = city.replace("Hyder", "Islam");
+document.write("City: " + city+ "<br>");
+document.write("After replacement: " + City2 + "<br>");
 
-//question 6
-for (var i = 1; i <= 15; i++) {
-    console.log(i);
-    document.write(i );
-}
+//q8
+var message = "Ali and Sami are best friends. They play cricket and football together.";
+var message2 = message.replace(/and/g, "&");
+document.write(message2 + "<br>");
 
-//b. reverse counting
-for (var i = 10; i >= 1; i--) {
-    console.log(i);
-    document.write(i );
-}
+//q9
+var string = "472";
+document.write("Value: " + str + "<br>");
+document.write("Type: " + typeof(string) + "<br>");
+document.write("Value: " + num + "<br>");
+document.write("Type: " + typeof(Num) + "<br>");
 
-//c. even
-for (var i = 0; i <= 20; i += 2) {
-    console.log(i);
-    document.write(i );
-}
+//q10
+var userInput = prompt("Enter any word:");
+var uppCse = userInput.toUpperCase();
+document.write("User input: " + userInput + "<br>");
+document.write("Upper case: " + uppCse + "<br>");
 
-//d. odd
-for (var i = 1; i < 20; i += 2) {
-    console.log(i);
-    document.write(i );
-}
-
-//e. series
-for (var i = 2; i <= 20; i += 2) {
-    console.log(i + "k");
-    document.write(i + "k ");
-}
-
-//question 7
-var A = ["cake", "apple pie", "cookie", "chips", "patties"];
-var search = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
+// //q11
+var number = 35.36 ;
+var string = number.toString().replace(".");
+document.write("Number: " + number + "<br>");
+document.write("Result: " + string + "<br>");
 
