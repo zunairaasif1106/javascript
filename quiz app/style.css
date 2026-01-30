@@ -1,0 +1,110 @@
+body{
+    font-family: 'poppins', sans-serif;
+    height: 100vh;
+    margin-top: 6rem;
+    padding: 0;
+    color: white; 
+     background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+h1{
+    text-align: center;
+    font-family: "caveat", cursive;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#ques{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 4rem;
+}
+
+#btn{
+    color: #b8c6db;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#btn:hover{
+    color: pink;
+}
+
+#opt1, #opt2, #opt3, #opt4{
+    width: 20rem;
+    height: 2rem;
+    font-size: 2rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+input[type="radio"]{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    accent-color: lightblue;
+}
+
+input[type="radio"]:hover{
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    background-color: lightblue;
+
+}
+
+div{
+    margin: 0 auto;
+    width: fit-content;
+
+}
+
+#timer{
+    font-size: 2rem;
+    margin-top: -10px;
+}
+
+@media(max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+
+    #opt1, #opt2, #opt3, #opt4{
+        width: 15rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    #ques{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        margin-top: 4rem;
+    }
+
+    #btn{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    #timer{
+        font-size: 1.5rem;
+        margin-top: -10px;
+    }
+}
