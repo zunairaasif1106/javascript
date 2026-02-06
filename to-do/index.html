@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+ 
+  <title> To-Do App</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="todo-app">
+        <h1>To-Do App</h1>
+        <div class="input-box">
+            <input type="text" id="item" placeholder="Add a new task..." />
+            <button onclick="add()">Add</button>
+            <button onclick="delAll()">Delete All</button>
+        </div>
+        <div class="todo-list">
+            <ul id="list"></ul>
+        </div>
+    </div>
+    </div>
+
+
+
+   <script>
+    var firebaseConfig = {
+  apiKey: "AIzaSyAUE1geUbE9tmzH1dYUOVrbSpcjyNb_M0c",
+  databaseURL: "https://to-do-app-zunaira-asif-b3252-default-rtdb.asia-southeast1.firebasedatabase.app",
+  authDomain: "to-do-app-zunaira-asif-b3252.firebaseapp.com",
+  projectId: "to-do-app-zunaira-asif-b3252",
+  storageBucket: "to-do-app-zunaira-asif-b3252.firebasestorage.app",
+  messagingSenderId: "569919456541",
+  appId: "1:569919456541:web:6016da55c888cc38020df4",
+  measurementId: "G-CPZ64F6MKR"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+   </script>
+    </body>
+    <script src="app.js"></script>
+    </html>
+   
+  
