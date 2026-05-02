@@ -130,8 +130,7 @@ if (hours < 0 || hours > 24) {
 // question 5
 var password = prompt("Enter password:");
 
-var a = false; 
-var b = false;
+var a = ;
 
 if (password.length < 6) {
     alert("Weak Password");
@@ -143,7 +142,7 @@ if (password.length < 6) {
         alert("Avoid common patterns");
     }
 
-    if (a && b) {
+    if (a) {
         alert("Strong Password");
     } else {
         alert("Medium Password");
@@ -262,18 +261,18 @@ var a3 = "js";
 
 var ans;
 
-ans = prompt("Q1: What does HTML stand for?");
-if (ans === a1) {
+var ans1 = prompt("Q1: What does HTML stand for?");
+if (ans1 === a1) {
     score++;
 }
 
-ans = prompt("Q2: What is used for styling web pages?");
-if (ans === a2) {
+var ans2 = prompt("Q2: What is used for styling web pages?");
+if (ans2 === a2) {
     score++;
 }
 
-ans = prompt("Q3: What is used for scripting in web pages?");
-if (ans === a3) {
+var ans3 = prompt("Q3: What is used for scripting in web pages?");
+if (ans3 === a3) {
     score++;
 }
 
