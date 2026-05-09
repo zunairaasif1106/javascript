@@ -43,16 +43,6 @@ let nums = [1, 2, 3, 4];
 document.write(myReduce(nums, "sum") + "<br>");
 document.write(myReduce(nums, "multiply"));
 
-//question 3
-let arr = [1, 2, 3, 4, 5];
-let result = [];
-while (arr.length > 0) {
-    let a = arr.pop();
-    result.push(a);
-}
-arr = result;
-document.write(arr);
-
 //question 4
 let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6];
@@ -75,14 +65,16 @@ for (let i = words.length - 1; i >= 0; i--) {
 document.write(result);
 
 //question 6
-console.log("VAR:", a, "| LET:", b, "| CONST:", c);
+console.log(a);
 var a = 10;
+console.log(b);
 let b = 20;
+console.log(c)
 const c = 30;
 function hello() {
-    return "Hello from function";
+    return "Hello";
 }
-console.log("FUNCTION:", hello());
+console.log(hello());
 
 //question 7
 showResult();
